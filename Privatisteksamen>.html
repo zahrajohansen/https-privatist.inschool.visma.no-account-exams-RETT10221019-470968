@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil - Eksamensdetaljer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif; /* Endret til Segoe UI */
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar {
+      background-color: white;
+      width: 250px;
+      height: 100vh;
+      float: left;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .main {
+      margin-left: 270px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-tilbake {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .grade-box {
+      display: inline-block;
+      border: 2px solid #007acc;
+      padding: 10px 20px;
+      color: #007acc;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .section div {
+      width: 45%;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    a {
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar" aria-label="Navigasjonsmeny">
+    <h2>Profil</h2>
+    <nav>
+      <ul>
+        <li><a href="#" aria-label="Mine eksamener">Mine eksamener</a></li>
+        <li><a href="#" aria-label="Profil">Profil</a></li>
+        <li><a href="#" aria-label="Etterspør dokumentasjon">Etterspør dokumentasjon</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <button class="btn-tilbake" aria-label="Gå tilbake til forrige side">Tilbake</button>
+
+    <article class="card" aria-labelledby="eksamen-tittel">
+      <h2 id="eksamen-tittel">Rettslære 2<br><small>(RETT1022 – muntlig-praktisk)</small></h2>
+      <div class="grade-box" aria-label="Karakter: 5">Karakter: 5</div>
+
+      <section class="section">
+        <div>
+          <h3>Registreringsdetaljer</h3>
+          <p><strong>Eksamensskole:</strong> Privatistkontoret i Oslo</p>
+          <p><strong>Pris:</strong> 1305.00 kr</p>
+        </div>
+
+        <div>
+          <h3>Eksamensdetaljer</h3>
+          <p><strong>Dato:</strong> 2. mai 2025</p>
+          <p><strong>Tidspunkt:</strong> 16:30 – 21:00 (5 timer)</p>
+          <p><strong>Oppmøtetidspunkt:</strong> 16:30</p>
+          <p><strong>Rom/bygning:</strong> KØ2–OKS, Oslo Katedralskole</p>
+          <p><strong>Adresse:</strong> Ullevålsveien 31, 0171 Oslo</p>
+        </div>
+      </section>
+
+  </main>
+</body>
+</html>
